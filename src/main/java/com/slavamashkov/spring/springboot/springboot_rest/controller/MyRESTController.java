@@ -24,7 +24,7 @@ public class MyRESTController {
         return allEmployees;
     }
 
-    /*@GetMapping("/employees/{id}")
+    @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id) {
         Employee employee = employeeService.getEmployee(id);
 
@@ -52,5 +52,5 @@ public class MyRESTController {
         employeeService.deleteEmployee(id);
 
         return "Employee with ID = " + id + " was deleted";
-    }*/
+    }
 }
